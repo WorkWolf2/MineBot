@@ -27,6 +27,8 @@ public class Main {
         jda.addEventListener(commandManager);
         jda.addEventListener(new StringSelectMenuListener());
         jda.addEventListener(new ButtonInteractionListener());
+        jda.addEventListener(new com.minegolem.minebot.listeners.candidature.StringSelectMenuListener());
+        jda.addEventListener(new com.minegolem.minebot.listeners.candidature.ButtonInteractionListener());
 
         jda.awaitReady();
     }
